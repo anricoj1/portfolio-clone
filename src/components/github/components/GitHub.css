@@ -1,0 +1,137 @@
+/* top level */
+.GitHubComponent {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+
+    color: white;
+    background-color: #24292E;
+}
+
+/* Profile Container */
+.ProfileContainer {
+    height: 50%;
+    width: 30%;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+/* circleImg div (better positioning inside div */
+.pfp {
+    height: 210px;
+    width: 210px;
+    margin: 40px 0px 20px 40px; /*top right bottom left */
+    padding: 20px;
+}
+
+.circleImg {
+    height: 100%;
+    position: inherit;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.user {
+    margin-left: 40px;
+}
+
+.about {
+    margin-left: 40px;
+}
+
+/* children of about */
+.name {
+    color : #9DA5B4;
+    font-size: 26px;
+    margin: 0px;
+}
+
+.username {
+    color: #666666;
+    font-size: 20px;
+}
+
+.bio {
+    color : #9DA5B4;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0px 25px 0px;
+}
+
+.link {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.stats {
+    color: #D6D8DA;
+    font-size: 14px;
+    margin: 20px 0px 20px 0px;
+}
+
+.span {
+    padding-right: 5px;
+}
+
+.company {
+    color : #9DA5B4;
+    font-size: 14px;
+}
+
+.blog {
+    color : #D6D8DA;
+    font-size: 14px;
+}
+
+/* middle div */
+.middleDiv {
+    height: 100%;
+    width: 70%;
+
+    right: 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* media queries */
+@media screen and (max-width: 900px) {
+    .ProfileContainer {
+        height: 30%;
+        width: 100%;
+    }
+
+    .pfp {
+        height: 160px;
+        width: 160px;
+        margin: 40px 0px 20px 40px; /*top right bottom left */
+        padding: 20px;
+    }
+
+    .circleImg {
+        height: 100%;
+        position: inherit;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    .user {
+        position: absolute;
+        margin: 10vh 0px 0px 23vh;
+    }
+
+    .about {
+        position: absolute;
+        margin-top: 13vh;
+    }
+
+    .bio {
+        position: relative;
+        margin-top: 10vh;
+    }
+    
+}
