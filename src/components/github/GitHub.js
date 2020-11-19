@@ -1,14 +1,14 @@
 /* react */
 import React from 'react';
 
-/* overview component
-import Overview from './components/Overview';
+/* overview component */
+import Overview from './components/overview/Overview';
 
-repositories component
-import Repositories from './components/repositories/Repositories'; */
+/* repositories component */
+import Repositories from './components/repositories/Repositories';
 
-/* error component if nothing to display send err through props
-import Error from './components/Error';*/
+/* error component if nothing to display send err through props */
+import Error from './components/error/Error';
 
 class GitHub {
     getProfile = async () => {
@@ -32,7 +32,6 @@ class GitHub {
         return await repos;
     }
 
-    /*
     setFlexBox = () => {
         return [
             { "name" : "Overview", "icon" : "fa fa-book-open fa-sm", "component" : <Overview />},
@@ -40,7 +39,7 @@ class GitHub {
             { "name" : "Projects", "icon" : "fa fa-list fa-sm", "component" : <Error msg="anricoj1 doesn't have any GitHub projects yet" />},
             { "name" : "Packages", "icon" : "fa fa-cube fa-sm", "component" : <Error msg="anricoj1 doesn't have any packages yet" />}
         ];
-    } */
+    }
 }
 
 export default GitHub;
