@@ -97,6 +97,9 @@
     flex-direction: column;
 }
 
+#flexbox {
+    padding-top: 6vh;
+}
 
 /* media queries */
 @media screen and (max-width: 900px) {
